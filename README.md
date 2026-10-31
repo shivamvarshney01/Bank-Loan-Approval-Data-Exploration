@@ -1,4 +1,4 @@
-# 🏦 Bank Loan Approval Data Exploration
+## 🏦 Bank Loan Approval Data Exploration
 
 ### Team Byte Bankers
 

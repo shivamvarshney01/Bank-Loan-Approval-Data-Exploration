@@ -18,7 +18,22 @@ DATA_PATH = Path(__file__).parent.parent / "data" / "india" / "cleaned_loan_data
 @st.cache_data
 def load_data():
     df = pd.read_csv(DATA_PATH)
+
+    # Clean column names
     df.columns = df.columns.str.strip()
+
+    # Clean loan status values
+    df["loan_status"] = (
+        df["loan_status"]
+        .astype(str)
+        .str.strip()
+        .str.title()
+    )
+
+    # Clean other text columns
+    df["education"] = df["education"].astype(str).str.strip()
+    df["self_employed"] = df["self_employed"].astype(str).str.strip()
+
     return df
 
 df = load_data()

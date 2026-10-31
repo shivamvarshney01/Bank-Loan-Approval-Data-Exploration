@@ -1,6 +1,6 @@
 ## 🏦 Bank Loan Approval Data Exploration
 
-### Team Byte Bankers
+### team byte bankers 
 
 An interactive data analytics project that explores loan application patterns, approval outcomes, applicant profiles, credit scores, and financial indicators using Python and Streamlit.
 
